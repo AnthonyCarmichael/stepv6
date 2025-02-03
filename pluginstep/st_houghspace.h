@@ -226,7 +226,7 @@ public:
         return CT_Grid4D_Sparse<DataT>::value(pix.w(), pix.x(), pix.y(), pix.z());
     }
 
-    inline DataT value(int levw, int levx, int levy, int levz) const override
+    inline DataT value(int levw, int levx, int levy, int levz) const //override
     {
         return CT_Grid4D_Sparse<DataT>::value(levw, levx, levy, levz);
     }
