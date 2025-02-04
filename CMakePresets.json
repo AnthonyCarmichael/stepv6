@@ -1,0 +1,28 @@
+{
+    "version": 10,
+    "cmakeMinimumRequired": {
+      "major": 3,
+      "minor": 23,
+      "patch": 0
+    },
+    "configurePresets": [
+      {
+        "name": "debug",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug"
+        }
+      },
+      {
+        "name": "win",
+        "displayName": "Windows",
+        "cacheVariables": {
+            "CMAKE_INSTALL_PREFIX": "C:/Qt/5.15.2/msvc2019_64",
+            "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+        }
+      },
+      {
+        "name": "win-dbg",
+        "inherits": ["win", "debug"]
+      }
+    ]
+  }
